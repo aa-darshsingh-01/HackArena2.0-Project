@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AegisPhish // AI Threat Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="logo">AEGIS<span>PHISH</span></div>
+            <div class="status-badge"><span class="pulse-dot"></span> AI ENGINE ONLINE</div>
+        </header>
+
+        <section class="terminal-section">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">ZERO-DAY URL FORENSICS COMPILER</span>
+            </div>
+            <div class="terminal-body">
+                <p class="console-text">Enter suspicious URL infrastructure target for deep multi-model synthesis...</p>
+                <div class="input-row">
+                    <span class="prompt">root@aegis:~#</span>
+                    <input type="url" id="url-input" placeholder="https://example-suspicious-domain.com" required>
+                    <button id="scan-btn">INITIATE SCAN</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="scanner-view" class="hidden">
+            <div class="loading-container">
+                <div class="radar-spinner"></div>
+                <div class="scan-status-box">
+                    <h3>SANDBOXING INFRASTRUCTURE...</h3>
+                    <p id="status-log">Deploying headless isolation container...</p>
+                </div>
+            </div>
+        </section>
+
+        <main id="results-matrix" class="hidden">
+            <div class="grid-card global-score">
+                <h3>OVERALL THREAT MATRIX</h3>
+                <div class="score-display">
+                    <span id="risk-percentage">87%</span>
+                    <label id="risk-level" class="danger">CRITICAL HAZARD</label>
+                </div>
+            </div>
+
+            <div class="grid-card">
+                <h3>1. VISUAL MODALITY</h3>
+                <p class="card-desc">Brand logo mimicry & layout alignment mismatch metrics.</p>
+                <div class="bar-container"><div id="visual-bar" class="fill" style="width: 92%"></div></div>
+                <span class="score-label">92% Match Conflict</span>
+            </div>
+
+            <div class="grid-card">
+                <h3>2. SEMANTIC MODALITY</h3>
+                <p class="card-desc">DOM text intent NLP modeling & cognitive strain vectors.</p>
+                <div class="bar-container"><div id="semantic-bar" class="fill" style="width: 74%"></div></div>
+                <span class="score-label">74% High Urgency Tone</span>
+            </div>
+
+            <div class="grid-card">
+                <h3>3. LEXICAL MODALITY</h3>
+                <p class="card-desc">Structural entropy, typosquatting & domain configuration.</p>
+                <div class="bar-container"><div id="lexical-bar" class="fill" style="width: 81%"></div></div>
+                <span class="score-label">81% Domain Discrepancy</span>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
