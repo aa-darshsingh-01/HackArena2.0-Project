@@ -39,3 +39,4 @@ document.getElementById('scan-btn').addEventListener("click", () => {
         resultsMatrix.scrollIntoView({ behavior: "smooth" });
     }, 8500);
 });
+
